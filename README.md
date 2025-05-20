@@ -57,6 +57,3 @@ This project predicts customer churn using machine learning techniques. The data
 ## 🤝 Contributing
 Feel free to fork this repository and contribute improvements! 🚀
 
-## 📧 Contact
-For any queries, contact me at [your-email@example.com].
-
