@@ -1,59 +1,62 @@
-# Customer_Churn_Prediction-
+# 📊 Customer Churn Prediction  
 
-## 📌 Project Overview
-This project predicts customer churn using machine learning techniques. The dataset used is from a telecom company, and the goal is to classify whether a customer will churn or not based on various features such as contract type, monthly charges, and tenure.
+## 📌 Project Overview  
+This project predicts **customer churn** using machine learning.  
+The dataset is from a telecom company, and the goal is to classify whether a customer will churn based on features like **contract type, monthly charges, and tenure**.  
 
-## 📂 Dataset
-- **Source:** Telco Customer Churn dataset
-- **Target Variable:** `Churn` (Yes/No -> Converted to 1/0)
-- **Features:** Demographics, service subscription details, account tenure, and charges
+The workflow covers **EDA → preprocessing → model training → evaluation → explainability** with XGBoost and SHAP.  
 
-## ⚙️ Technologies Used
-- **Python** (pandas, numpy, seaborn, matplotlib)
-- **Machine Learning:** Scikit-learn (Random Forest Classifier)
-- **Jupyter Notebook / Google Colab**
-- **Git & GitHub**
+---
 
-## 🚀 Project Workflow
-1. **Data Preprocessing**
-   - Handling missing values
-   - Encoding categorical variables
-   - Feature selection
-2. **Exploratory Data Analysis (EDA)**
-   - Distribution of churn rates
-   - Correlation heatmap
-3. **Model Training**
-   - Random Forest Classifier
-   - Train-Test Split (80-20)
-4. **Model Evaluation**
-   - Accuracy, Precision, Recall, F1-score
-   - Confusion Matrix
-   - ROC-AUC Curve
-5. **Deployment**
-   - Model saved as `churn_model.pkl`
-   - Ready for integration into web applications
+## 📂 Dataset  
+- **Source:** Telco Customer Churn dataset  
+- **Target Variable:** `Churn` (Yes/No → Converted to 1/0)  
+- **Features:** Demographics, service subscription details, account tenure, and charges  
 
-## 📌 How to Run the Project
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/aditi-tato/customer-churn-prediction.git
-   cd customer-churn-prediction
-   ```
-2. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-4. Load `customer_churn.ipynb` and execute all cells.
+---
 
-## 📄 Model Deployment (Future Scope)
-- **Flask API** for serving predictions
-- **Web UI with Streamlit**
-- **Deploy on Heroku/AWS**
+## ⚙️ Technologies Used  
+- **Python Libraries:** pandas, numpy, seaborn, matplotlib  
+- **Machine Learning:** scikit-learn, imbalanced-learn, XGBoost  
+- **Explainability:** SHAP (SHapley Additive exPlanations)  
+- **Development:** Jupyter Notebook / Google Colab  
+- **Version Control:** Git & GitHub  
 
-## 🤝 Contributing
-Feel free to fork this repository and contribute improvements! 🚀
+---
 
+## 🚀 Project Workflow  
+1. **Data Preprocessing**  
+   - Handle missing values  
+   - Encode categorical variables  
+   - Scale numerical features  
+   - Balance classes with SMOTE  
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Churn rate distribution  
+   - Correlation heatmap  
+   - Feature distributions  
+
+3. **Model Training**  
+   - Algorithm: XGBoost Classifier  
+   - Hyperparameter tuning with RandomizedSearchCV  
+   - Train-Test Split (80-20)  
+
+4. **Model Evaluation**  
+   - Accuracy, Precision, Recall, F1-score  
+   - ROC-AUC Curve  
+   - Confusion Matrix (heatmap)  
+   - Precision-Recall Curve  
+
+5. **Explainability**  
+   - Feature importance (XGBoost)  
+   - SHAP global summary plot  
+   - SHAP local force plots for individual predictions  
+
+---
+
+## 📌 How to Run the Project  
+
+Clone the repository:  
+```bash
+git clone https://github.com/aditi-tato/customer-churn-prediction.git
+cd customer-churn-prediction
